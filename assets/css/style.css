@@ -248,6 +248,14 @@ body.nav-active {
   font-size: var(--fs-5);
 }
 
+.section-title {
+  margin-block-end: 16px;
+}
+
+.grid-list {
+  display: grid;
+  gap: 30px;
+}
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
@@ -459,10 +467,128 @@ body.nav-active {
   #ABOUT
 \*-----------------------------------*/
 
+.about .wrapper {
+  display: grid;
+  gap: 50px;
+  margin-block-end: 70px;
+}
+
+.progress-list .label-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-end: 4px;
+}
+
+.progress-item:not(:last-child) {
+  margin-block-end: 16px;
+}
+
+.progress {
+  background-color: var(--raisin-black_a6);
+  height: 6px;
+  width: 100%;
+  border-radius: var(--radius-pill);
+  -webkit-border-radius: var(--radius-pill);
+  -moz-border-radius: var(--radius-pill);
+  -ms-border-radius: var(--radius-pill);
+  -o-border-radius: var(--radius-pill);
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: inherit;
+}
+
+.about-card {
+  text-align: center;
+}
+
+.about-card .card-icon {
+  max-width: max-content;
+  margin-inline: auto;
+}
+
+.about-card .card-title {
+  margin-block: 16px 10px;
+}
 /*-----------------------------------*\
   #PROJECTS
 \*-----------------------------------*/
 
+.project {
+  border-block: 1px solid var(--cadet-blue-crayola_a20);
+}
+
+.project .title-wrapper {
+  margin-block-end: 40px;
+}
+
+.project .btn {
+  margin-block-start: 24px;
+}
+
+.project .grid-list {
+  gap: 40px;
+}
+
+.project-card {
+  --padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding);
+  border-radius: var(--radius-8);
+  -webkit-border-radius: var(--radius-8);
+  -moz-border-radius: var(--radius-8);
+  -ms-border-radius: var(--radius-8);
+  -o-border-radius: var(--radius-8);
+  overflow: hidden;
+}
+
+.project-card-1,
+.project-card-2,
+:is(.project-card-3, .project-card-4) .card-content {
+  padding: var(--padding);
+}
+
+.project-card-1 {
+  padding-block-end: 0;
+}
+
+.project :is(.project-card-3, .project-card-4) {
+  gap: 0;
+}
+
+.project-card .card-tag {
+  font-size: var(--fs-8);
+  font-weight: var(--fw-700);
+  text-transform: uppercase;
+}
+
+.project-card .card-title {
+  margin-block: 16px;
+}
+
+.project-card .card-text {
+  margin-block-end: 20px;
+}
+
+.project-card .btn-text {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: var(--fw-700);
+  transition: var(--transition-1);
+  -webkit-transition: var(--transition-1);
+  -moz-transition: var(--transition-1);
+  -ms-transition: var(--transition-1);
+  -o-transition: var(--transition-1);
+}
+
+.project-card .btn-text:is(:hover, :focus-visible) {
+  gap: 10px;
+}
 /*-----------------------------------*\
   #CONTACT
 \*-----------------------------------*/
