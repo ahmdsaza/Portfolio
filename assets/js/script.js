@@ -33,3 +33,25 @@ window.addEventListener("scroll", function () {
     header.classList.remove("active");
   }
 });
+
+const revealElements = document.querySelectorAll("[data-reveal]");
+const revealDelayElements = document.querySelectorAll("[data-reveal-delay]");
+
+const reveal = function () {
+  for (let i = 0, len = revealElements.length; i < len; i++) {
+    if (
+      revealElements[i].getBoundingClientRect().top <
+      window.innerHeight / 1.2
+    ) {
+      revealElements[i].classList.add("revealed");
+    }
+  }
+};
+
+for (let i = 0, len = revealDelayElements.length; i < len; i++) {
+  revealDelayElements[0].computedStyleMap.transitionDelay =
+    revealDelayElements[i].CDATA_SECTION_NODE.revealDelay;
+}
+
+window.addEventListener("scroll", reveal);
+window.addEventListener("load", reveal);
