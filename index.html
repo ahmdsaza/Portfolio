@@ -34,7 +34,7 @@
 
     <header class="header" data-header>
       <div class="container">
-        <a href="#" class="logo"
+        <a class="logo"
           ><img
             src="./assets/images/logo-dark.svg"
             width="64"
@@ -62,19 +62,19 @@
 
           <ul class="navbar-list">
             <li>
-              <a href="#" class="navbar-link">Home</a>
+              <a href="#home" class="navbar-link">Home</a>
             </li>
             <li>
-              <a href="#" class="navbar-link">About</a>
+              <a href="#about" class="navbar-link">About</a>
             </li>
             <li>
-              <a href="#" class="navbar-link">Projects</a>
+              <a href="#projects" class="navbar-link">Projects</a>
             </li>
+            <!-- <li>
+              <a href="#blog" class="navbar-link">Blog</a>
+            </li> -->
             <li>
-              <a href="#" class="navbar-link">Blog</a>
-            </li>
-            <li>
-              <a href="#" class="navbar-link">Contact</a>
+              <a href="#contact" class="navbar-link">Contact</a>
             </li>
           </ul>
 
@@ -130,21 +130,12 @@
           <div class="container">
             <figure class="hero-banner">
               <img
-                src="./assets/images/hero-banner.jpg"
+                src="./assets/images/971.jpg"
                 width="560"
                 height="540"
                 alt="hero-banner"
                 class="w-100"
                 data-reveal="top"
-              />
-              <img
-                src="./assets/images/hero-shape.svg"
-                width="203"
-                height="91"
-                alt="hero-banner"
-                class="shape"
-                data-reveal="top"
-                data-reveal-delay="0.25s"
               />
             </figure>
 
@@ -154,16 +145,15 @@
                 data-reveal="top"
                 data-reveal-delay="0.5s"
               >
-                I'm Front End developer
+                I'm Front End Developer
               </h1>
               <p
                 class="section-text"
                 data-reveal="top"
                 data-reveal-delay="0.75s"
               >
-                Hello! I'm Julia, a freelance user interface designer &
-                developer based in London. I’m very passionate about the work
-                that I do.
+                Hello! I'm Ahmed, Front End Developer. I’m very passionate about
+                the work that I do.
               </p>
 
               <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
@@ -176,7 +166,7 @@
 
         <!-- About -->
 
-        <section class="section about">
+        <section class="section about" id="about">
           <div class="container">
             <div class="wrapper">
               <div data-reveal="left">
@@ -322,7 +312,11 @@
 
         <!-- PROJECTS -->
 
-        <section class="section project" aria-labelledby="project-label">
+        <section
+          class="section project"
+          aria-labelledby="project-label"
+          id="projects"
+        >
           <div class="container">
             <div class="title-wrapper" data-reveal="top">
               <div>
@@ -476,7 +470,7 @@
 
         <!-- CONTACT -->
 
-        <section class="section contact" aria-label="contact">
+        <section class="section contact" aria-label="contact" id="contact">
           <div class="container">
             <div class="contact-card">
               <div class="contact-content" data-reveal="left">
@@ -535,22 +529,22 @@
 
         <footer class="footer">
           <div class="container">
-            <p class="copyright">
+            <!-- <p class="copyright">
               © 2022 Ahmed S.Alzahrani. All rights reserved.
-            </p>
+            </p> -->
             <ul class="social-list">
               <li>
-                <a href="" class="social-link">
+                <a href="https://x.com/ahmedsaudzh" class="social-link">
                   <ion-icon name="logo-twitter"></ion-icon>
                 </a>
               </li>
               <li>
                 <a href="" class="social-link">
-                  <ion-icon name="logo-facebook"></ion-icon>
+                  <ion-icon name="logo-github"></ion-icon>
                 </a>
               </li>
               <li>
-                <a href="" class="social-link">
+                <a href="https://ahmedsaud.me" class="social-link">
                   <ion-icon name="logo-dribbble"></ion-icon>
                 </a>
               </li>
@@ -560,8 +554,8 @@
                 </a>
               </li>
               <li>
-                <a href="" class="social-link">
-                  <ion-icon name="logo-youtube"></ion-icon>
+                <a href="https://wa.me/966553767638" class="social-link">
+                  <ion-icon name="logo-whatsapp"></ion-icon>
                 </a>
               </li>
             </ul>
